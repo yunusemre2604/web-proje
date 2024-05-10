@@ -105,3 +105,100 @@ h1{
 .hakkimda-boyut{
     height: 200px;
 }
+/*Özgeçmiş Kısmı Başlangıç*/
+
+
+.ozgecmis{
+    margin-top: 47px !important;
+}
+.ozgecmis-card{
+    background-color: rgba(0, 0, 0, 0.74);
+    height: 100vh;
+    width: 100%;
+    
+    background-size: cover;
+    background-position: center center  ;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    
+}
+.egitim{
+    padding-bottom: 50px;
+    margin: 50px;
+    padding-left: 0%;
+    
+}
+.Beceriler{
+    margin:50px;
+    padding-left: 0%;
+    padding-bottom: 50px;
+}
+.Diller{
+    margin:50px;
+    padding-left: 0%;
+    padding-bottom: 85px;
+}
+.cv-hakkimda{
+    margin-left:50px;
+    padding-left: 0%;
+    padding-bottom: 50px;
+    padding:50px;
+}
+.cv-hakkimda p{
+    letter-spacing: 2px;
+}
+.deneyim{
+    margin-left:50px;
+    padding-left: 0%;
+    padding-bottom: 50px;
+    padding: 50px;
+}
+.referans{
+    margin-left:50px;
+    padding-left: 0%;
+    padding-bottom: 50px;
+    padding: 50px;
+}
+.deneyim p{
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+    padding-bottom :150px; 
+}
+.referans p{
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+    padding-bottom :150px; 
+}
+.cv-img img{
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+    border-radius: 50%;
+    
+    
+   
+}
+.bolum li{
+    display: inline-block;
+    
+    justify-content: space-between;
+    margin: 100px;
+}
+.bolum{
+    height:350px;
+}
+@media screen and (max-width:992px){ /*genişliği 992 pixelden küçük olursa(medium cihaz ve daha küçük cihazlarda) ayrcaın gorunmemesini istiyorum*/
+    .ozgecmis-card{
+        background-color: rgba(0, 0, 0, 0.74);
+        height: 150vh;
+        width: 100%;
+        
+        background-size: cover;
+        background-position: center center  ;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        
+    }
+    
+}
+/*Özgeçmiş Kısmı Bitiş*/
