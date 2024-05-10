@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding: 0;
+    
+}
+.logo{
+    height: 50px;
+    width: 100px;
+ 
+    
+    
+}
+.seperator{
+    font-size: 20px;
+    margin: 0px 10px;
+    font-weight: bolder;
+}
+
+.arkaplan{
+    
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6) ), url(images/arkaplan.jpg);
+    height: 280vh;
+    width: 100%;
+    
+    background-size: cover;
+    background-position: center center  ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.navbar-bg{
+    background-color: rgba(85,85,85,0.493);
+}
+.nav-item a{
+    color:#ffff;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+@media screen and (max-width:992px){ /*genişliği 992 pixelden küçük olursa(medium cihaz ve daha küçük cihazlarda) ayrcaın gorunmemesini istiyorum*/
+    .seperator{
+        display: none;
+    }
+    .nav-item:hover{
+        background-color: rgba(53, 8, 8, 0.082);
+
+    }
+    .arkaplan{
+        background-image: url(images/arkaplan.jpg);
+    height: 500vh;
+    width: 100%;
+    
+    background-size: cover;
+    background-position: center center  ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+    
+}
+.card-bilgi{
+    background-color:rgb(18, 18, 28) ;
+}
+.card-yazi{
+    color: white;
+    
+}
+.card img {
+    border-radius: 50%;
+}
+.h-10 {
+    height: 20% !important;
+  }
+.w-10 {
+    width: 20% !important;
+}
+.card {
+    background-color: inherit; /* Kartın arka planını sitenin arka planına eşitle */
+    background-image: inherit;
+}
+.font-ayar{
+    font-family: sans-serif;
+    transition: 0.5s;
+}
+.hakkimda{
+    transition: 0.5s;
+}
+
+.card img{
+    transition: 0.5s;
+}
+.card img:hover{
+    transform: scale(0.9);
+}
+.hakkimda:hover{
+    transform: scale(0.9);
+}
+h1{
+    font-size: 120px;
+}
+.card-ayar{
+    background-color: rgba(0, 0, 0, 0.74);
+}
+.hakkimda-border{
+    border-radius: 0% !important;
+}
+.hakkimda-boyut{
+    height: 200px;
+}
