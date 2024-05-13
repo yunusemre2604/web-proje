@@ -221,3 +221,70 @@ h1{
     
 }
 /*Özgeçmiş Kısmı Bitiş*/
+
+/*şehrim kısmı başlangıç*/
+.foto-slider-height{
+    height:500px;
+}
+.slider-width{
+    width: 800px;
+}
+.sehrim-kismi{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6) ), url(images/masal-satosujpg.jpg);
+    height: 1000vh;
+    width: 100%;
+    margin-top: 65px !important;
+    background-size: cover;
+    background-position: center center  ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.yazi{
+    border:none;
+}
+.sehrim-hakkinda h2{
+    color: burlywood;
+}
+
+.cizgi{
+    border:none;
+    border-top:3px solid rgb(255, 0, 0);
+    max-width: 1000px;
+    margin: 25px auto;
+
+}
+.cizgi-buyuk{
+    border:none;
+    border-top:3px solid rgb(255, 0, 0);
+    width: auto;
+    margin: 25px auto;
+
+}
+.ibeyaz{
+    color: rgb(255, 0, 0);
+    position: relative;
+    top: -55px;
+    left: 630px;
+    font-size: 40px;
+    
+
+}
+.img-height-width{
+    height: 450px;
+    width: 250px;
+}
+.gezi h2{
+    color: burlywood;
+    
+}
+.img-radi-0{
+    border-radius: 0% !important;
+    object-fit: cover !important;
+    
+    
+}
+.gezi-card{
+    border-right: none;
+    border-left: none;
+}
+/*şehrim kısmı bitiş*/

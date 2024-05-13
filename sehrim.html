@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--şehrim kısmı başlangıç -->
+    <nav class="navbar navbar-expand-lg navbar-bg fixed-top  " >
+      <div class="container p-0">
+        <a class="navbar-brand " href="anasayfa.html" >
+          <img class = "img-fluid logo" src="images/indir.jpg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 " >
+            <li class="nav-item d-flex align-items-center p-3 ">
+              <a class="nav-link " aria-current="page" href="anasayfa.html">Hakkımda</a>
+              <span class = "seperator">|</span>
+            </li>
+            
+            <li class="nav-item d-flex align-items-center p-3">
+              <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
+              <span class = "seperator">|</span>
+            </li>
+            <li class="nav-item d-flex align-items-center p-3">
+              <a class="nav-link" href="sehrim.html">Şehrim</a>
+              <span class = "seperator">|</span>
+            </li>
+            <li class="nav-item d-flex align-items-center p-3">
+              <a class="nav-link" href="takimim.html">Takımım</a>
+              <span class = "seperator">|</span>
+            </li>
+            <li class="nav-item d-flex align-items-center p-3" >
+              <a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a>
+              <span class = "seperator">|</span>
+            </li>
+            <li class="nav-item d-flex align-items-center p-3">
+              <a class="nav-link" href="#">İletişim</a>
+              
+            </li>
+              
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+    
+    <div class="sehrim-kismi">
+      <div class="row row-cols-1 row-cols-md-1 g-4 " >
+                
+                
+        <div class="col">
+          <div class="card yazi" id="sehrim">
+            
+            <div class="card-body">
+              <h1 class="card-title text-center text-light"><header>ŞEHRİM</header></h1>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container ">
+        <div class="row justify-content-center">
+          <div class="col-md-5 slider-width">
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+              <div class="carousel-inner ">
+                <div class="carousel-item active">
+                  <a href="#sazova">
+                    <img src="images/masal-satosujpg.jpg" class="d-block w-100 foto-slider-height" alt="...">
+                  </a>
+                </div>
+                <div class="carousel-item">
+                  <a href="#porsuk">
+                    <img src="images/porsuk-nehri-aksam.jpeg" class="d-block w-100 foto-slider-height" alt="...">
+                  </a>
+                  
+                </div>
+                <div class="carousel-item">
+                  <a href="#muze">
+                    <img src="images/ommjpg.jpg" class="d-block w-100 foto-slider-height" alt="...">
+
+                  </a>
+                  
+                </div>
+                <div class="carousel-item">
+                  <a href="#odunpazari">
+                    <img src="images/odunpazari.jpg" class="d-block w-100 foto-slider-height" alt="...">
+
+                  </a>
+                  
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+      
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+   
+
+
+      <!--şehir hakkında bilgiler başlangıç-->
+      <section class="p-5 sehrim-hakkinda">
+        <div class="container">
+          <h2 class="mb-5 font-weight-bold text-center">Eskişehir</h2>
+          <hr class="cizgi-buyuk"> <i class="fa-solid fa-city ibeyaz"></i>
+          <p class="text-light text-center">
+            Hareketli sosyal hayatı, zengin kültürü, genç nüfusu, tertemiz caddeleri,850 bin civarı Eskişehir Nüfusu, kaplıcaları, 
+            Porsuk Çayı ve yeşilliği ile insanı büyüleyen, uygar bir yaşam denince akla gelen şehir Bilecik, Bolu, Ankara, Konya, Afyon, Kütahya ile
+             komşudur. Türkiye’nin en gelişmiş ve çağdaş şehirlerinden biri olan Eskişehir tipik bir Cumhuriyet şehridir. 
+             Eskişehir’in Tarihi geçmişi M.Ö.3000 yılına kadar dayandığı için Eskişehir ismi verilmiştir.Eskişehir tarihi boyunca Hitit, Friya,
+              Lidya, Pers, Makedonya, Selevkos, Galat, Bergama, Roma, Bizans,Selçuklu, Osmanlı hakimiyetine ev sahipliği yapmıştır. Nüfusunun bir kısmı 
+              Balkan ülkelerinden Romanya, eski Yugoslavya, Arnavutluk, Bulgaristan, Rusya Krım ve Ukrayna gibi ülkelerden gelen göçmenlerden oluşur.
+              Eskişehir caddeleri, evleriyle adeta nostaljik Avrupa görüntüsünü yansıtıyor. Mesire alanlarının geniş olması size sevdiklerinizle birlikte
+               piknik tatili yapma imkanı veriyor. Kaplıcaların termal turizmin gelişmesine temel oluşturduğu Eskişehir’de birçok renkli damlataşları
+             olan mağaraları gezebilirsiniz. Her açıdan birçok yeniliklere imza atan Eskişehir halk arasında öğrenci şehri olarak bilinir.
+          </p> <br><br>
+          <hr class="cizgi-buyuk"> <i class="fa-solid fa-city ibeyaz"></i>
+        </div>
+      </section>
+
+
+
+      <!--şehir hakkında bilgiler bitiş-->
+
+      <!--odunpazarı evleri başlangic-->
+      <section class="p-5 gezi " id="odunpazari">
+        <div class="container">
+          <h2 class="mb-5 font-weight-bold text text-center ">Odunpazarı Evleri</h2>
+          <hr class="cizgi"> <i class="fa-solid fa-house ibeyaz"></i>
+          <p class="text-light text-center">
+            Yeniden restore edilen evleriyle  Eskişehrin en eski yerleşim yeri olan Odunpazarı 
+            görenleri tarihi serüven yaşatır.Eskişehir’in tarihine şahitlik eden Odunpazarı Evleri,
+             Eskişehir’de görülecek yerler listenizde olabilir.
+          </p> <br><br>
+          <div class="card-deck">
+            <div class="row row-cols-md-4 g-6">
+              <div class="card shadow gezi-card">
+                <img  class="h-100 w-100" src="images/odunpazari-3.jpeg" alt="">
+                
+
+              </div>
+              <div class="card shadow odunpazari-card">
+                <img  class="h-100 w-100 " src="images/odunpazari-2.jpeg" alt="">
+                
+
+              </div>
+              <div class="card shadow odunpazari-card">
+                <img   class="h-100 w-100" src="images/odunpazari.jpg" alt="">
+                
+
+              </div>
+              <div class="card shadow odunpazari-card">
+                <img  class="h-100 w-100" src="images/odunpazari-4.jpeg" alt="">
+                
+
+              </div>
+            </div>
+            <br><br>
+            <hr class="cizgi"> <i class="fa-solid fa-house ibeyaz"></i>
+           
+
+        </div>
+
+
+      </section>
+      <!--odunpazarı evleri bitiş-->
+
+      <!--sazova parkı başlangıç-->
+      <section class="p-5 gezi" id="sazova">
+        <div class="container">
+          <h2 class="mb-5 font-weight-bold text text-center ">Sazova Parkı</h2>
+          <hr class="cizgi"> <i class="fa-solid fa-tree ibeyaz"></i>
+          <p class="text-light text-center">
+            Masal Şatosu ve Korsan Gemisi ile ilgi gören Sazova Parkı, Eskişehir’de mutlaka uğramanız gereken yerlerden biridir.
+          </p> <br><br>
+          <div class="card-deck">
+            <div class="row row-cols-md-4 g-6">
+              <div class="card shadow gezi-card">
+                <img  class="img-radi-0" src="images/masal-satosu-3.jpeg" alt="">
+                
+
+              </div>
+              <div class="card shadow sazova-card">
+                <img  class="img-radi-0 " src="images/masal-satosu-gemi.jpeg" alt="">
+                
+
+              </div>
+              <div class="card shadow sazova-card">
+                <img   class="img-radi-0 h-100 w-100" src="images/masal-satosu2.jpeg" alt="">
+                
+
+              </div>
+              <div class="card shadow sazova-card">
+                <img  class="img-radi-0" src="images/masal-satosu-5.jpeg" alt="">
+                
+
+              </div>
+            </div>
+            <br><br>
+            <hr class="cizgi"> <i class="fa-solid fa-tree ibeyaz"></i>
+           
+
+        </div>
+
+      </section>
+
+
+      <!--sazova parkı bitiş-->
+
+      <!--porsuk nehri başlangıç-->
+      <section class="p-5 gezi " id="porsuk">
+        <div class="container">
+          <h2 class="mb-5 font-weight-bold text text-center ">Porsuk Nehri</h2>
+          <hr class="cizgi"> <i class="fa-solid fa-water ibeyaz"></i>
+          <p class="text-light text-center">
+            Eskişehir denince akla ilk gelen ve şehirle özdeşleşen bu nehiri isterseniz teknelerle gezebilirsiniz, 
+            isterseniz nehrin etrafındaki park, köprü ve mekanlar da  keyifli bir yürüyüş yapabilirsiniz.
+             Önemli yerleşim birimi olan Adalar ve Porsuk Çayı,Eskişehir’de gezilecek yerler listenizde ilk sıraya koyabilirsiniz.
+          </p> <br><br>
+          <div class="card-deck">
+            <div class="row row-cols-md-4 g-6">
+              <div class="card shadow gezi-card">
+                <img  class="img-radi-0" src="images/porsuk-sumer-2.jpeg" alt="">
+                
+
+              </div>
+              <div class="card shadow porsuk-card">
+                <img  class="img-radi-0" src="images/porsuk-nehri-aksam.jpeg" alt="">
+                
+
+              </div>
+              <div class="card shadow porsuk-card">
+                <img   class="img-radi-0" src="images/porsuk-gece.jpeg" alt="">
+                
+
+              </div>
+              <div class="card shadow porsuk-card">
+                <img  class="img-radi-0" src="images/porsuk-nehri-gunduz.jpeg" alt="">
+                
+
+              </div>
+            </div>
+            <br><br>
+            <hr class="cizgi"> <i class="fa-solid fa-water ibeyaz"></i>
+           
+
+        </div>
+
+      </section>
+
+
+      <!--porsuk nehri bitiş-->
+
+      <!--eskişehir sokakları başlangıç-->
+      <section class="p-5 gezi">
+        <div class="container">
+          <h2 class="mb-5 font-weight-bold text text-center ">Caddeleri</h2>
+          <hr class="cizgi"> <i class="fa-solid fa-road ibeyaz"></i>
+          <p class="text-light text-center">
+            Her sokağı ve her caddesi ayrı bir güzel olan bu şehre geeldiğinizde caddeleri sizi büyüleyecek.
+          </p> <br><br>
+          <div class="card-deck">
+            <div class="row row-cols-md-4 g-6">
+              <div class="card shadow cadde-card">
+                <img  class="img-radi-0" src="images/cadde-collesium.jpeg" alt="">
+                
+
+              </div>
+              <div class="card shadow cadde-card">
+                <img  class="h-100 w-100 " src="images/barlar.jpg" alt="">
+                
+
+              </div>
+              <div class="card shadow cadde-card">
+                <img   class="" src="images/cadde-doktorlar.jpeg" alt="">
+                
+
+              </div>
+              <div class="card shadow cadde-card">
+                <img  class=" h-100 w-100" src="images/hamamyolu.jpg" alt="">
+                
+
+              </div>
+            </div>
+            <br><br>
+            <hr class="cizgi"> <i class="fa-solid fa-road ibeyaz"></i>
+           
+
+        </div>
+
+      </section>
+
+      <!--eskişehir sokakları bitiş-->
+      <!--kışın başlangıç-->
+      <section class="p-5 gezi " id="kis">
+        <div class="container">
+          <h2 class="mb-5 font-weight-bold text text-center ">Kışın Eskişehir</h2>
+          <hr class="cizgi"> <i class="fa-solid fa-snowflake ibeyaz"></i>
+          <p class="text-light text-center">
+            Kışın Eskişehir'e gelirseniz eğer porsuk nehrinin donmuş olduğunu göreceksiniz. Eğer kışın Eskişehir'e gelirseniz -20 derece soğukla
+            karşılaşabilirsiniz, fakat sizi üşüten bu soğuğa aldanmayın çünkü Eskişehir'in karlı manzarasını görünce içiniz ısınacak. Gelirken kalın 
+            paltolarınızı getirmeyi unutmayın.
+          </p> <br><br>
+          <div class="card-deck">
+            <div class="row row-cols-md-4 g-6">
+              <div class="card shadow gezi-card">
+                <img  class="img-radi-0" src="images/posuk-donmus.jpeg" alt="">
+                
+
+              </div>
+              <div class="card shadow cadde-card">
+                <img  class="img-radi-0 " src="images/kis-sazova-2.jpeg" alt="">
+                
+
+              </div>
+              <div class="card shadow cadde-card">
+                <img   class="img-radi-0 h-100 w-100" src="images/kis-2.jpg" alt="">
+                
+
+              </div>
+              <div class="card shadow cadde-card">
+                <img  class="img-radi-0 h-100 w-100" src="images/kis.jpeg" alt="">
+                
+
+              </div>
+            </div>
+            <br><br>
+            <hr class="cizgi"> <i class="fa-solid fa-snowflake ibeyaz"></i>
+           
+
+        </div>
+
+      </section>
+
+      <!--kışın bitiş-->
+
+      <!--müzeler başlangıç-->
+      <section class="p-5 gezi" id="muze">
+        <div class="container">
+          <h2 class="mb-5 font-weight-bold text text-center ">Müzeler</h2>
+          <hr class="cizgi"> <i class="fa-solid fa-building-columns ibeyaz"></i>
+          <p class="text-light text-center">
+            Eskişehire geldiğinizde gezebieceğiniz birçok müze olacak. Balmumu ve lületaşı ile özdeşleşen bu şehirde balmumu müzesi ve lületaşı
+            müzesi mevcuttur.Aşağıda sırası ile cam sanatları müzesi, lületaşı müzesi , odunpazarı modern müze ve balmumu müzesinin fotoğrafları vardır.
+          </p> <br><br>
+          <div class="card-deck">
+            <div class="row row-cols-md-4 g-6">
+              <div class="card shadow gezi-card">
+                <img  class=" img-height-width" src="images/cam-sanatlari.jpeg" alt="">
+                
+
+              </div>
+              <div class="card shadow cadde-card">
+                <img  class=" img-height-width" src="images/luletasi-muzesijpg.jpg" alt="">
+                
+
+              </div>
+              <div class="card shadow cadde-card">
+                <img   class="img-height-width" src="images/omm-ici.jpeg" alt="">
+                
+
+              </div>
+              <div class="card shadow cadde-card">
+                <img  class=" h-100 w-100" src="images/balmumu.jpg" alt="">
+                
+
+              </div>
+            </div>
+            <br><br>
+            <hr class="cizgi"> <i class="fa-solid fa-building-columns ibeyaz"></i>
+           
+
+        </div>
+
+      </section>
+      <!--müzeler bitiş-->
+
+      
+
+    </div>
+
+
+
+
+
+
+    <!--şehrim bitiş-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+
+
+
+       
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
