@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-bg fixed-top  " >
+        <div class="container p-0">
+          <a class="navbar-brand " href="anasayfa.html" >
+            <img class = "img-fluid logo" src="images/indir.jpg" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 " >
+              <li class="nav-item d-flex align-items-center p-3 ">
+                <a class="nav-link " aria-current="page" href="anasayfa.html">Hakkımda</a>
+                <span class = "seperator">|</span>
+              </li>
+              
+              <li class="nav-item d-flex align-items-center p-3">
+                <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
+                <span class = "seperator">|</span>
+              </li>
+              <li class="nav-item d-flex align-items-center p-3">
+                <a class="nav-link" href="sehrim.html">Şehrim</a>
+                <span class = "seperator">|</span>
+              </li>
+              <li class="nav-item d-flex align-items-center p-3">
+                <a class="nav-link" href="takimim.html">Takımım</a>
+                <span class = "seperator">|</span>
+              </li>
+              <li class="nav-item d-flex align-items-center p-3" >
+                <a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a>
+                <span class = "seperator">|</span>
+              </li>
+              <li class="nav-item d-flex align-items-center p-3">
+                <a class="nav-link" href="#">İletişim</a>
+                
+              </li>
+                
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <br><br>
+  
+    <div class="iletisim-sayfasi">
+        <div class="container iletisim ">
+            <div class="row justify-content-center text-light text-white">
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group ">
+                            <label for="Name ">İsim <i class="fa-solid fa-user"></i></label>
+                            <input type="text" class="form-control" id="Name" onkeyup="onaylamaAd()" placeholder="Enter your name">
+                            <span  id="isim-hata"></span>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <label for="Surname">Soyisim <i class="fa-solid fa-user"></i></label>
+                            <input type="text" class="form-control" id="Surname" onkeyup="onaylamaSoyad()" placeholder="Enter your surname">
+                            <span id="soyisim-hata"></span>
+                        </div>
+                        <hr>
+                        <div class="form-group ">
+                            <label for="PhoneNumber">Telefon Numarası <i class="fa-solid fa-phone"></i></label>
+                            <input type="text" class="form-control" id="Numara" onkeyup="onaylamaNumara()" aria-describedby="phoneHelp"
+                                placeholder="Email Gir">
+                            <span id="numara-hata"></span>    
+                            <small class="form-text text-muted">Telefon numaranızı kimse ile paylaşmayacağız.</small>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <label for="Email">Email <i class="fa-solid fa-envelope"></i></label>
+                            <input type="email" class="form-control" id="Email" onkeyup="onaylamaEmail()" aria-describedby="emailHelp"
+                                placeholder="Numara Gir">
+                            <span class="" id="email-hata"></span>    
+                            <small class="form-text text-muted">Email'inizi kimse ile paylaşmayacağız.</small>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <label for="Bolge">Bölge <i class="fa-solid fa-city"></i></label>
+                            <select multiple class="form-control" id="Bolge"   onclick="onaylamaBolge()" aria-placeholder="">
+                                <option>Marmara</option>
+                                <option>İç Anadolu</option>
+                                <option>Ege</option>
+                                <option>Akdeniz</option>
+                                <option>Karadeniz</option>
+                                <option>Doğu Anadolu</option>
+                                <option>Güney Doğu Anadolu</option>
+
+                              </select>
+                              <span class="" id="bolge-hata"></span>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <label>Cinsiyet <i class="fa-solid fa-venus-mars"></i></label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="Radio1" value="male">
+                                <label class="form-check-label" for="Radios1">Erkek</label>
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gender" id="Radio2" value="female">
+                                <label class="form-check-label" for="Radios2">Kadın</label>
+                            </div>
+                            <span  id="cinsiyet-hata"></span>
+
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <label><i class="fa-solid fa-question"></i>Bu siteyi neden ziyaret ettiniz? <i class="fa-solid fa-question"></i></label>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="Check1">
+                                <label class="form-check-label" for="Check1">İlgimi Çekti</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="Check2">
+                                <label class="form-check-label" for="Check2">Araştırma için</label>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="Check3">
+                                <label class="form-check-label" for="Check2">Sadece karşıma çıktı</label>
+                            </div>
+                            <small class="form-text text-muted">Birden fazla seçim yapabilirsiniz.</small>
+                            <span class="" id="soru-hata"></span>
+
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <label for="exampleSubject">Konu</label>
+                            <input type="text" class="form-control" id="Konu" onkeyup ="onaylamaKonu()" placeholder="Konu Giriniz">
+                            <span class="" id="konu-hata"></span>
+
+                            <hr>
+                            <label for="Mesaj">Mesaj</label>
+                            <textarea class="form-control" id="Mesaj" rows="5" onkeyup ="onaylamaMesaj()" placeholder="Mesaj Giriniz"></textarea>
+                            <span class="" id="mesaj-hata"></span>
+                       </div>
+                          
+
+                        <button type="submit" class="btn btn-danger" onclick="return onaylamaButon()" >Onayla</button>
+                        <span id="onaylama-hata"></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    
+
+    <script src="iletisimScript.js"></script>
+    <!-- Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+
+</body>
+
+</html>
+
+

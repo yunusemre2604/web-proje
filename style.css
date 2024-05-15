@@ -358,3 +358,29 @@ h1{
     color: burlywood;
 }
 /*TAKIMIM KISMI BİTİŞ*/
+/*iletişim başlangıç*/
+
+.iletisim{
+    background-color: rgb(8, 0, 56);
+}
+.iletisim-sayfasi{
+    background-color: black;
+}
+.form-group span{
+    
+    color: red;
+    bottom:12px;
+    right: 17px;
+    font-size: 14px;
+    
+}
+.form-group hr{
+    color: white;
+}
+.hata-kirmizi{
+    color: red;
+}
+.hata-green{
+    color:green;
+}
+/*iletişim bitiş*/
