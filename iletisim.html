@@ -1,157 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Form</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>İletişim Sayfası</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <nav class="navbar navbar-expand-lg navbar-bg fixed-top">
-    <div class="container p-0">
-        <a class="navbar-brand" href="anasayfa.html">
-            <img class="img-fluid logo" src="images/hitit.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item d-flex align-items-center p-3">
-                    <a class="nav-link" aria-current="page" href="anasayfa.html">Hakkımda</a>
-                    <span class="seperator">|</span>
-                </li>
-                <li class="nav-item d-flex align-items-center p-3">
-                    <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
-                    <span class="seperator">|</span>
-                </li>
-                <li class="nav-item d-flex align-items-center p-3">
-                    <a class="nav-link" href="sehrim.html">Şehrim</a>
-                    <span class="seperator">|</span>
-                </li>
-                <li class="nav-item d-flex align-items-center p-3">
-                    <a class="nav-link" href="takimim.html">Takımım</a>
-                    <span class="seperator">|</span>
-                </li>
-                <li class="nav-item d-flex align-items-center p-3">
-                    <a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a>
-                    <span class="seperator">|</span>
-                </li>
-                <li class="nav-item d-flex align-items-center p-3">
-                    <a class="nav-link" href="iletisim.html">İletişim</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<br><br>
+    <nav class="navbar navbar-expand-lg navbar-bg fixed-top  ">
+        <div class="container p-0">
+            <a class="navbar-brand " href="anasayfa.html">
+                <img class="img-fluid logo" src="images/hitit.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item d-flex align-items-center p-3 ">
+                        <a class="nav-link " aria-current="page" href="anasayfa.html">Hakkımda</a>
+                        <span class="seperator">|</span>
+                    </li>
 
-<div class="iletisim-sayfasi">
-    <div class="container iletisim">
-        <div class="row justify-content-center text-light text-white">
-            <div class="col-md-6">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <label for="Name">İsim <i class="fa-solid fa-user"></i></label>
-                        <input type="text" class="form-control" id="Name" onkeyup="onaylamaAd()" placeholder="Enter your name">
-                        <span id="isim-hata"></span>
-                    </div>
-                    <hr>
-                    <div class="form-group">
-                        <label for="Surname">Soyisim <i class="fa-solid fa-user"></i></label>
-                        <input type="text" class="form-control" id="Surname" onkeyup="onaylamaSoyad()" placeholder="Enter your surname">
-                        <span id="soyisim-hata"></span>
-                    </div>
-                    <hr>
-                    <div class="form-group">
-                        <label for="PhoneNumber">Telefon Numarası <i class="fa-solid fa-phone"></i></label>
-                        <input type="text" class="form-control" id="Numara" onkeyup="onaylamaNumara()" aria-describedby="phoneHelp" placeholder="Email Gir">
-                        <span id="numara-hata"></span>
-                        <small class="form-text text-muted">Telefon numaranızı kimse ile paylaşmayacağız.</small>
-                    </div>
-                    <hr>
-                    <div class="form-group">
-                        <label for="Email">Email <i class="fa-solid fa-envelope"></i></label>
-                        <input type="email" class="form-control" id="Email" onkeyup="onaylamaEmail()" aria-describedby="emailHelp" placeholder="Numara Gir">
-                        <span id="email-hata"></span>
-                        <small class="form-text text-muted">Email'inizi kimse ile paylaşmayacağız.</small>
-                    </div>
-                    <hr>
-                    <div class="form-group">
-                        <label for="Bolge">Bölge <i class="fa-solid fa-city"></i></label>
-                        <select multiple class="form-control" id="Bolge" onclick="onaylamaBolge()">
-                            <option>Marmara</option>
-                            <option>İç Anadolu</option>
-                            <option>Ege</option>
-                            <option>Akdeniz</option>
-                            <option>Karadeniz</option>
-                            <option>Doğu Anadolu</option>
-                            <option>Güney Doğu Anadolu</option>
-                        </select>
-                        <span id="bolge-hata"></span>
-                    </div>
-                    <hr>
-                    <div class="form-group">
-                        <label>Cinsiyet <i class="fa-solid fa-venus-mars"></i></label>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gender" id="Radio1" value="male">
-                            <label class="form-check-label" for="Radio1">Erkek</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gender" id="Radio2" value="female">
-                            <label class="form-check-label" for="Radio2">Kadın</label>
-                        </div>
-                        <span id="cinsiyet-hata"></span>
-                    </div>
-                    <hr>
-                    <div class="form-group">
-                        <label><i class="fa-solid fa-question"></i>Bu siteyi neden ziyaret ettiniz? <i class="fa-solid fa-question"></i></label>
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="Check1" value="İlgimi Çekti">
-                            <label class="form-check-label" for="Check1">İlgimi Çekti</label>
-                        </div>
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="Check2" value="Araştırma için">
-                            <label class="form-check-label" for="Check2">Araştırma için</label>
-                        </div>
-                        <div class="form-group form-check">
-                            <input type="checkbox" class="form-check-input" id="Check3" value="Sadece karşıma çıktı">
-                            <label class="form-check-label" for="Check3">Sadece karşıma çıktı</label>
-                        </div>
-                        <small class="form-text text-muted">Birden fazla seçim yapabilirsiniz.</small>
-                        <span id="soru-hata"></span>
-                    </div>
-                    <hr>
-                    <div class="form-group">
-                       
-                        <hr>
-                        <label for="Mesaj">Mesaj</label>
-                        <textarea class="form-control" id="Mesaj" rows="5" onkeyup="onaylamaMesaj()" placeholder="Mesaj Giriniz"></textarea>
-                        <span id="mesaj-hata"></span>
-                    </div>
-                    <button type="button" class="btn btn-danger" onclick="return onaylamaButon()">Onayla</button>
-                    <span id="onaylama-hata"></span>
-                </form>
-                <div id="submittedData" class="mt-5 text-light"></div>
+                    <li class="nav-item d-flex align-items-center p-3">
+                        <a class="nav-link" href="ozgecmis.html">Özgeçmiş</a>
+                        <span class="seperator">|</span>
+                    </li>
+                    <li class="nav-item d-flex align-items-center p-3">
+                        <a class="nav-link" href="sehrim.html">Şehrim</a>
+                        <span class="seperator">|</span>
+                    </li>
+                    <li class="nav-item d-flex align-items-center p-3">
+                        <a class="nav-link" href="takimim.html">Takımım</a>
+                        <span class="seperator">|</span>
+                    </li>
+                    <li class="nav-item d-flex align-items-center p-3">
+                        <a class="nav-link" href="ilgi-alanlarim.html">İlgi Alanlarım</a>
+                        <span class="seperator">|</span>
+                    </li>
+                    <li class="nav-item d-flex align-items-center p-3">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+
+                    </li>
+
+                </ul>
+
             </div>
         </div>
+    </nav>
+    <div id="app" class="container mt-5">
+        <h1 class="mb-4">İletişim Formu</h1>
+        <form id="contactForm "  @submit.prevent="handleSubmit" >
+            <div class="form-group">
+                <label for="name">Ad:</label>
+                <input type="text" id="name" v-model="form.name"  onkeyup="onaylamaAd()" @keyup="validateName" class="form-control" :class="{'is-invalid': errors.name} ">
+                <div class="invalid-feedback">{{ errors.name }}</div>
+                <div id="isim-hata"></div>
+            </div>
+            <div class="form-group">
+                <label for="surname">Soyad:</label>
+                <input type="text" id="surname" v-model="form.surname" onkeyup="onaylamaSoyad()" @keyup="validateSurname" class="form-control" :class="{'is-invalid': errors.surname} ">
+                <div class="invalid-feedback">{{ errors.surname }}</div>
+                <span id="soyisim-hata"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">E-posta:</label>
+                <input  id="email" v-model="form.email" @keyup="validateEmail"  onkeyup="onaylamaEmail()" class="form-control" :class="{'is-invalid': errors.email}">
+                <div class="invalid-feedback">{{ errors.email }}</div>
+                <span id="email-hata"></span>
+                
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefon Numarası:</label>
+                <input id="phone" v-model="form.phone" @keyup="validatePhone"  onkeyup="onaylamaNumara()" class="form-control" :class="{'is-invalid': errors.phone}">
+                <div class="invalid-feedback">{{ errors.phone }}</div>
+                <span id="numara-hata"></span>
+            </div>
+            <div class="form-group">
+                <label for="region">Bölge: <i class="fa-solid fa-city"></i></label>
+                <select multiple  v-model="form.region" class="form-control" :class="{'is-invalid': errors.region}" @change="validateRegion" onclick="onaylamaBolge()" id="region" >
+                    <option>Marmara</option>
+                    <option>İç Anadolu</option>
+                    <option>Ege</option>
+                    <option>Akdeniz</option>
+                    <option>Karadeniz</option>
+                    <option>Doğu Anadolu</option>
+                    <option>Güney Doğu Anadolu</option>
+                </select>
+                <div class="invalid-feedback">{{ errors.region }}</div>
+                <span id="bolge-hata"></span>
+            </div>
+            <hr>
+            <div class="form-group"  >
+                <label>Cinsiyet <i class="fa-solid fa-venus-mars"></i></label>
+                <div class="form-check" :class="{'is-invalid': errors.gender}" >
+                    <input v-model="form.gender" class="form-check-input"   type="radio" name="gender" @change="validateGender" id="Radio1" value="male" >
+                    <label class="form-check-label" for="Radio1">Erkek</label>
+                </div>
+                <div class="form-check"  :class="{'is-invalid': errors.gender}">
+                    <input v-model="form.gender" class="form-check-input"  type="radio" name="gender"@change="validateGender" id="Radio2" value="female" >
+                    <label class="form-check-label" for="Radio2">Kadın</label>
+                </div>
+                <div class="invalid-feedback">{{errors.gender}}</div>
+                <span id="cinsiyet-hata"></span>
+            </div>
+            <div class="form-group">
+                <label><i class="fa-solid fa-question"></i>Bu siteyi neden ziyaret ettiniz? <i class="fa-solid fa-question"></i></label>
+                <div class="form-group form-check " :class="{'is-invalid': errors.reasons}">
+                    <input type="checkbox" class="form-check-input"  @change="validateReasons" id="Check1" value="İlgimi Çekti" v-model="form.reasons">
+                    <label class="form-check-label" for="Check1">İlgimi Çekti</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input"  @change="validateReasons" id="Check2" value="Araştırma için" v-model="form.reasons">
+                    <label class="form-check-label" for="Check2">Araştırma için</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" @change="validateReasons" id="Check3" value="Sadece karşıma çıktı" v-model="form.reasons">
+                    <label class="form-check-label" for="Check3">Sadece karşıma çıktı</label>
+                </div>
+                <small class="form-text text-muted">Birden fazla seçim yapabilirsiniz.</small>
+                <div class="invalid-feedback">{{ errors.reasons}}</div>
+                <span id="soru-hata"></span>
+            </div>
+            <div class="form-group">
+                <label for="message">Mesaj:</label>
+                <textarea id="message" v-model="form.message" @keyup="validateMessage"  onkeyup="onaylamaMesaj()" class="form-control" :class="{'is-invalid': errors.message}"></textarea>
+                <div class="invalid-feedback">{{ errors.message }}</div>
+                <span id="mesaj-hata"></span>
+            </div>
+            <div class="form-group " >
+                
+                <button type="submit" class="btn btn-primary" >Vue.js ile Gönder</button> <br>
+               
+                
+            </div>
+            <button type="button" @click="clearForm" class="btn btn-secondary" >Temizle</button>
+            <button type="submit" class="btn btn-danger" onclick="return onaylamaButon()">JS ile Onayla</button>
+            
+            <span id="onaylama-hata"></span>
+        </form>
+       
+        <div v-if="submitted" class="mt-4">
+            <h2>Girilen Bilgiler:</h2>
+            <p><strong>Ad:</strong> {{ displayData.name }}</p>
+            <p><strong>Soyad:</strong> {{ displayData.surname }}</p>
+            <p><strong>E-posta:</strong> {{ displayData.email }}</p>
+            <p><strong>Telefon Numarası:</strong> {{ displayData.phone }}</p>
+            <p><strong>Bölge:</strong> {{ displayData.region.join(', ') }}</p>
+            <p><strong>Cinsiyet:</strong> {{ displayData.gender }}</p>
+            <p><strong>Ziyaret Sebebi:</strong> {{ displayData.reasons.join(', ') }}</p>
+            <p><strong>Mesaj:</strong> {{ displayData.message }}</p>
+        </div>
+        <div id="submittedData" class="mt-5 text-light"></div>
     </div>
-</div>
-
-<script src="iletisimScript.js"></script>
-<!-- Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+    <script src="iletisimScript.js"></script>
 </body>
 </html>
