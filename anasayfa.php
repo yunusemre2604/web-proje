@@ -20,7 +20,7 @@ session_start();
     <div class="ust-kisim">
         <nav class="navbar navbar-expand-lg navbar-bg fixed-top  " >
             <div class="container p-0">
-              <a class="navbar-brand " href="anasayfa.html" >
+              <a class="navbar-brand " href="anasayfa.php" >
                 <img class = "img-fluid logo" src="images/hitit.png" alt="">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,7 @@ session_start();
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 " >
                   <li class="nav-item d-flex align-items-center p-3 ">
-                    <a class="nav-link " aria-current="page" href="anasayfa.html">Hakkımda</a>
+                    <a class="nav-link " aria-current="page" href="anasayfa.php">Hakkımda</a>
                     <span class = "seperator">|</span>
                   </li>
                   
